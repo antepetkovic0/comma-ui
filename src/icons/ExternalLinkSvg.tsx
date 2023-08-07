@@ -2,6 +2,7 @@ export function ExternalLinkSvg(): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      role="img"
       width="20"
       height="20"
       viewBox="0 0 20 20"

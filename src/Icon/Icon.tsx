@@ -7,13 +7,13 @@ import {
   SuccessSvg,
   WarningSvg,
 } from '../icons';
-import warning from '../utils';
+import warning from '../utils/warning';
 
 type IconName = 'info' | 'success' | 'warning' | 'error' | 'external-link';
 
-export interface IconProps {
+export type IconProps = {
   name: IconName;
-}
+};
 
 const Icon = ({ name }: IconProps): JSX.Element | null => {
   const icon = useMemo(() => {

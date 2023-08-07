@@ -12,10 +12,10 @@ const APPEARANCE_MAPS: Record<SpinnerAppearance, string> = {
   invert: 'border-[#c4c4c2]/30 border-t-white',
 };
 
-export interface SpinnerProps {
-  readonly size?: SpinnerSize;
-  readonly appearance?: SpinnerAppearance;
-}
+export type SpinnerProps = {
+  size?: SpinnerSize;
+  appearance?: SpinnerAppearance;
+};
 
 const Spinner = ({
   size = 'medium',
