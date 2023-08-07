@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { twMerge } from 'tailwind-merge';
-import Icon from '../Icon/Icon';
+import Icon from '../Icon';
 
 type AlertType = 'info' | 'success' | 'warning' | 'error';
 

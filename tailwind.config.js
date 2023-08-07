@@ -10,6 +10,12 @@ export default {
           tertiary: '#72716f',
           subdued: '#a6a5a2',
         },
+        ['cui-astral']: {
+          primary: '#2e7899',
+          secondary: '#2a638f',
+          tertiary: '#074058',
+          quaternary: '#5d72c2',
+        },
         ['cui-success']: {
           100: '#ebf5f1',
           200: '#b6d1c6',
