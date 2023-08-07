@@ -1,6 +1,6 @@
-type Warning = (component: string, message?: string) => void;
+import { noop } from './noop';
 
-function noop() {}
+type Warning = (component: string, message?: string) => void;
 
 let warning: Warning = noop;
 

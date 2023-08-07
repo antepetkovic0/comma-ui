@@ -1,10 +1,11 @@
 type SpinnerSize = 'small' | 'medium' | 'large';
-type SpinnerAppearance = 'default' | 'invert';
+
+export type SpinnerAppearance = 'default' | 'invert';
 
 const SIZE_MAPS: Record<SpinnerSize, string> = {
-  small: 'w-5 h-5 border-2',
-  medium: 'w-10 h-10 border-4',
-  large: 'w-20 h-20 border-8',
+  small: 'w-4 h-4 border-2',
+  medium: 'w-8 h-8 border-4',
+  large: 'w-16 h-16 border-8',
 };
 
 const APPEARANCE_MAPS: Record<SpinnerAppearance, string> = {
