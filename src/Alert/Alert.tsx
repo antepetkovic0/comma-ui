@@ -24,7 +24,9 @@ const Alert = forwardRef<HTMLDivElement, AlertProps>(
 
     return (
       <div role="alert" ref={ref} className={classes} {...props}>
-        <Icon name={type} />
+        <div className="flex-shrink-0">
+          <Icon name={type} />
+        </div>
         {children}
       </div>
     );

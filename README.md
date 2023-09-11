@@ -1,27 +1,68 @@
-# React + TypeScript + Vite
+**daisyUI components built with React, Typescript and TailwindCSS**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💿 Install
 
-Currently, two official plugins are available:
+Make sure you've installed <a href="https://tailwindcss.com/docs/installation">TailwindCSS</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install the package with npm or yarn:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+npm install react-daisyui
+or
+yarn add react-daisyui
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## ⚡ Quick Start
+
+Import comma-ui components within your component files:
+
+```js
+import { Button } from 'react-daisyui';
+
+export default (props) => {
+  return <Button color="primary">Click me!</Button>;
+};
+```
+
+## ⚙️ Components
+
+<details>
+<summary>Actions</summary>
+  
+- [x] <a href="#">Button</a>
+- [X] <a href="#">Modal</a>
+</details>
+
+<details>
+<summary>Data Display</summary>
+  
+- [x] <a href="#">Alert</a>
+- [X] <a href="#">Spinner</a>
+- [x] <a href="#">Tooltip</a>
+</details>
+
+<details>
+<summary>Data Input</summary>
+
+- [] <a href="#">Checkbox</a>
+- [] <a href="#">Input</a>
+- [] <a href="#">Radio</a>
+- [] <a href="#">Range</a>
+- [] <a href="#">Select</a>
+- [] <a href="#">MultiSelect</a>
+- [] <a href="#">Toggle</a>
+</details>
+
+<details>
+<summary>Layout</summary>
+
+- [] <a href="#">Toast</a>
+</details>
+
+<details>
+<summary>Navigation</summary>
+
+- [x] <a href="#">Anchor</a>
+- [] <a href="#">Stepper</a>
+- [] <a href="#">Tabs</a>
+</details>
