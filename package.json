@@ -1,7 +1,7 @@
 {
   "name": "comma-ui",
   "description": "commaUI - React + Tailwind CSS component library",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Ante Petkovic",
   "license": "MIT",
   "private": false,
@@ -33,9 +33,14 @@
     "version:minor": "npm version minor --no-git-tag-version",
     "version:patch": "npm version patch --no-git-tag-version"
   },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.0.0"
+  },
   "peerDependencies": {
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tailwindcss": "^3"
   },
   "devDependencies": {
@@ -74,8 +79,5 @@
     "typescript": "^5.2.2",
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.6.3"
-  },
-  "dependencies": {
-    "tailwind-merge": "^2.0.0"
   }
 }
