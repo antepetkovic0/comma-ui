@@ -4,8 +4,16 @@
   "version": "1.0.0",
   "author": "Ante Petkovic",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "type": "module",
+  "main": "./dist/comma-ui.umd.cjs",
+  "module": "./dist/comma-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/comma-ui.js",
+      "require": "./dist/comma-ui.umd.cjs"
+    }
+  },
   "scripts": {
     "start": "storybook dev -p 6006",
     "dev": "vite",
