@@ -1,7 +1,7 @@
 {
   "name": "comma-ui",
   "description": "commaUI - React + Tailwind CSS component library",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Ante Petkovic",
   "license": "MIT",
   "private": false,
@@ -71,6 +71,7 @@
     "tailwindcss": "^3.3.3",
     "ts-jest": "^29.1.1",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.3"
   }
 }
