@@ -1,4 +1,4 @@
-**daisyUI components built with React, Typescript and TailwindCSS**
+**CommaUI components built with React, Typescript and TailwindCSS**
 
 ## 💿 Install
 
@@ -7,9 +7,9 @@ Make sure you've installed <a href="https://tailwindcss.com/docs/installation">T
 Install the package with npm or yarn:
 
 ```bash
-npm install react-daisyui
+npm install comma-ui
 or
-yarn add react-daisyui
+yarn add comma-ui
 ```
 
 ## ⚡ Quick Start
@@ -30,7 +30,7 @@ export default (props) => {
 <summary>Actions</summary>
   
 - [x] <a href="#">Button</a>
-- [X] <a href="#">Modal</a>
+- [] <a href="#">Modal</a>
 </details>
 
 <details>
