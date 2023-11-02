@@ -1,7 +1,7 @@
 {
   "name": "comma-ui",
   "description": "commaUI - React + Tailwind CSS component library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Ante Petkovic",
   "license": "MIT",
   "private": false,
@@ -24,7 +24,10 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "version:major": "npm version major --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:patch": "npm version patch --no-git-tag-version"
   },
   "dependencies": {
     "react": "^18.2.0",
