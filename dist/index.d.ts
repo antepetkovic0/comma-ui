@@ -5,4 +5,3 @@ export type SpinnerProps = TSpinnerProps;
 export { default as Alert } from './Alert';
 import { AlertProps as TAlertProps } from './Alert';
 export type AlertProps = TAlertProps;
-export { default as tailwindConfig } from './utils/tailwind-config';

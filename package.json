@@ -1,7 +1,7 @@
 {
   "name": "comma-ui",
   "description": "commaUI - React + Tailwind CSS component library",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "author": "Ante Petkovic",
   "license": "MIT",
   "private": false,
@@ -15,7 +15,8 @@
     ".": {
       "import": "./dist/comma-ui.js",
       "require": "./dist/comma-ui.umd.cjs"
-    }
+    },
+    "./style.css": "./dist/style.css"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
