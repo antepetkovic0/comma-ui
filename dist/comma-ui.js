@@ -1,4 +1,5 @@
 import qe, { useMemo as kr, forwardRef as Tr } from "react";
+import { default as Et } from "./tailwind-config.js";
 var ke = { exports: {} }, oe = {};
 /**
  * @license React
@@ -3072,7 +3073,7 @@ const mt = rr, vt = ({ name: r }) => {
   warning: "bg-orange-100 border-orange-200"
 }, yt = Tr(
   ({ type: r, children: n, className: i, ...a }, u) => {
-    const s = ct("flex items-start gap-2 p-4 border rounded-sm text-cui-text-primary", ht[r], i);
+    const s = ct("alert flex items-start gap-2 p-4 border rounded-sm text-cui-text-primary", ht[r], i);
     return /* @__PURE__ */ k.jsxs("div", { role: "alert", ref: u, className: s, ...a, children: [
       /* @__PURE__ */ k.jsx("div", { className: "flex-shrink-0", children: /* @__PURE__ */ k.jsx(vt, { name: r }) }),
       n
@@ -3082,5 +3083,6 @@ const mt = rr, vt = ({ name: r }) => {
 yt.displayName = "Alert";
 export {
   yt as Alert,
-  xt as Spinner
+  xt as Spinner,
+  Et as tailwindConfig
 };

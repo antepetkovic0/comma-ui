@@ -14,7 +14,11 @@
   "exports": {
     ".": {
       "import": "./dist/comma-ui.js",
-      "require": "./dist/comma-ui.umd.cjs"
+      "require": "./dist/comma-ui.cjs"
+    },
+    "./tailwind-config": {
+      "import": "./dist/tailwind-config.js",
+      "require": "./dist/tailwind-config.cjs"
     }
   },
   "types": "./dist/index.d.ts",

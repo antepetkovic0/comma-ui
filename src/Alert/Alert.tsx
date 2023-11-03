@@ -19,7 +19,7 @@ const TYPE_MAPS: Record<AlertType, string> = {
 const Alert = forwardRef<HTMLDivElement, AlertProps>(
   ({ type, children, className, ...props }, ref): JSX.Element => {
     const baseClasses =
-      'flex items-start gap-2 p-4 border rounded-sm text-cui-text-primary';
+      'alert flex items-start gap-2 p-4 border rounded-sm text-cui-text-primary';
     const classes = twMerge(baseClasses, TYPE_MAPS[type], className);
 
     return (
