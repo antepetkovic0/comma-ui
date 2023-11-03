@@ -1,5 +1,4 @@
 import qe, { useMemo as kr, forwardRef as Tr } from "react";
-import { default as Et } from "./tailwind-config.js";
 var ke = { exports: {} }, oe = {};
 /**
  * @license React
@@ -11,20 +10,20 @@ var ke = { exports: {} }, oe = {};
  * LICENSE file in the root directory of this source tree.
  */
 var Ue;
-function Pr() {
+function jr() {
   if (Ue)
     return oe;
   Ue = 1;
   var r = qe, n = Symbol.for("react.element"), i = Symbol.for("react.fragment"), a = Object.prototype.hasOwnProperty, u = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, l = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function s(d, p, w) {
-    var g, x = {}, T = null, O = null;
-    w !== void 0 && (T = "" + w), p.key !== void 0 && (T = "" + p.key), p.ref !== void 0 && (O = p.ref);
+  function s(d, p, x) {
+    var g, w = {}, T = null, O = null;
+    x !== void 0 && (T = "" + x), p.key !== void 0 && (T = "" + p.key), p.ref !== void 0 && (O = p.ref);
     for (g in p)
-      a.call(p, g) && !l.hasOwnProperty(g) && (x[g] = p[g]);
+      a.call(p, g) && !l.hasOwnProperty(g) && (w[g] = p[g]);
     if (d && d.defaultProps)
       for (g in p = d.defaultProps, p)
-        x[g] === void 0 && (x[g] = p[g]);
-    return { $$typeof: n, type: d, key: T, ref: O, props: x, _owner: u.current };
+        w[g] === void 0 && (w[g] = p[g]);
+    return { $$typeof: n, type: d, key: T, ref: O, props: w, _owner: u.current };
   }
   return oe.Fragment = i, oe.jsx = s, oe.jsxs = s, oe;
 }
@@ -39,16 +38,16 @@ var ie = {};
  * LICENSE file in the root directory of this source tree.
  */
 var Be;
-function jr() {
+function Pr() {
   return Be || (Be = 1, process.env.NODE_ENV !== "production" && function() {
-    var r = qe, n = Symbol.for("react.element"), i = Symbol.for("react.portal"), a = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), l = Symbol.for("react.profiler"), s = Symbol.for("react.provider"), d = Symbol.for("react.context"), p = Symbol.for("react.forward_ref"), w = Symbol.for("react.suspense"), g = Symbol.for("react.suspense_list"), x = Symbol.for("react.memo"), T = Symbol.for("react.lazy"), O = Symbol.for("react.offscreen"), F = Symbol.iterator, _ = "@@iterator";
-    function P(e) {
+    var r = qe, n = Symbol.for("react.element"), i = Symbol.for("react.portal"), a = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), l = Symbol.for("react.profiler"), s = Symbol.for("react.provider"), d = Symbol.for("react.context"), p = Symbol.for("react.forward_ref"), x = Symbol.for("react.suspense"), g = Symbol.for("react.suspense_list"), w = Symbol.for("react.memo"), T = Symbol.for("react.lazy"), O = Symbol.for("react.offscreen"), F = Symbol.iterator, _ = "@@iterator";
+    function j(e) {
       if (e === null || typeof e != "object")
         return null;
       var t = F && e[F] || e[_];
       return typeof t == "function" ? t : null;
     }
-    var j = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    var P = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     function C(e) {
       {
         for (var t = arguments.length, o = new Array(t > 1 ? t - 1 : 0), c = 1; c < t; c++)
@@ -58,7 +57,7 @@ function jr() {
     }
     function le(e, t, o) {
       {
-        var c = j.ReactDebugCurrentFrame, v = c.getStackAddendum();
+        var c = P.ReactDebugCurrentFrame, v = c.getStackAddendum();
         v !== "" && (t += "%s", o = o.concat([v]));
         var y = o.map(function(m) {
           return String(m);
@@ -69,7 +68,7 @@ function jr() {
     var X = !1, ce = !1, ue = !1, de = !1, fe = !1, Z;
     Z = Symbol.for("react.module.reference");
     function Q(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === a || e === l || fe || e === u || e === w || e === g || de || e === O || X || ce || ue || typeof e == "object" && e !== null && (e.$$typeof === T || e.$$typeof === x || e.$$typeof === s || e.$$typeof === d || e.$$typeof === p || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === a || e === l || fe || e === u || e === x || e === g || de || e === O || X || ce || ue || typeof e == "object" && e !== null && (e.$$typeof === T || e.$$typeof === w || e.$$typeof === s || e.$$typeof === d || e.$$typeof === p || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -101,7 +100,7 @@ function jr() {
           return "Profiler";
         case u:
           return "StrictMode";
-        case w:
+        case x:
           return "Suspense";
         case g:
           return "SuspenseList";
@@ -116,7 +115,7 @@ function jr() {
             return h(o._context) + ".Provider";
           case p:
             return ee(e, e.render, "ForwardRef");
-          case x:
+          case w:
             var c = e.displayName || null;
             return c !== null ? c : M(e.type) || "Memo";
           case T: {
@@ -131,9 +130,9 @@ function jr() {
       return null;
     }
     var I = Object.assign, $ = 0, Y, re, H, W, te, N, U;
-    function je() {
+    function Pe() {
     }
-    je.__reactDisabledLog = !0;
+    Pe.__reactDisabledLog = !0;
     function tr() {
       {
         if ($ === 0) {
@@ -141,7 +140,7 @@ function jr() {
           var e = {
             configurable: !0,
             enumerable: !0,
-            value: je,
+            value: Pe,
             writable: !0
           };
           Object.defineProperties(console, {
@@ -192,27 +191,27 @@ function jr() {
         $ < 0 && C("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var ye = j.ReactCurrentDispatcher, we;
+    var ye = P.ReactCurrentDispatcher, xe;
     function pe(e, t, o) {
       {
-        if (we === void 0)
+        if (xe === void 0)
           try {
             throw Error();
           } catch (v) {
             var c = v.stack.trim().match(/\n( *(at )?)/);
-            we = c && c[1] || "";
+            xe = c && c[1] || "";
           }
         return `
-` + we + e;
+` + xe + e;
       }
     }
-    var xe = !1, be;
+    var we = !1, be;
     {
       var or = typeof WeakMap == "function" ? WeakMap : Map;
       be = new or();
     }
     function Ae(e, t) {
-      if (!e || xe)
+      if (!e || we)
         return "";
       {
         var o = be.get(e);
@@ -220,7 +219,7 @@ function jr() {
           return o;
       }
       var c;
-      xe = !0;
+      we = !0;
       var v = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
       var y;
@@ -277,7 +276,7 @@ function jr() {
             }
         }
       } finally {
-        xe = !1, ye.current = y, nr(), Error.prepareStackTrace = v;
+        we = !1, ye.current = y, nr(), Error.prepareStackTrace = v;
       }
       var J = e ? e.displayName || e.name : "", Ye = J ? pe(J) : "";
       return typeof e == "function" && be.set(e, Ye), Ye;
@@ -297,7 +296,7 @@ function jr() {
       if (typeof e == "string")
         return pe(e);
       switch (e) {
-        case w:
+        case x:
           return pe("Suspense");
         case g:
           return pe("SuspenseList");
@@ -306,7 +305,7 @@ function jr() {
         switch (e.$$typeof) {
           case p:
             return ir(e.render);
-          case x:
+          case w:
             return ge(e.type, t, o);
           case T: {
             var c = e, v = c._payload, y = c._init;
@@ -318,7 +317,7 @@ function jr() {
         }
       return "";
     }
-    var me = Object.prototype.hasOwnProperty, Oe = {}, Me = j.ReactDebugCurrentFrame;
+    var me = Object.prototype.hasOwnProperty, Oe = {}, Me = P.ReactDebugCurrentFrame;
     function ve(e) {
       if (e) {
         var t = e._owner, o = ge(e.type, e._source, t ? t.type : null);
@@ -369,7 +368,7 @@ function jr() {
       if (ur(e))
         return C("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", cr(e)), Ie(e);
     }
-    var ne = j.ReactCurrentOwner, dr = {
+    var ne = P.ReactCurrentOwner, dr = {
       key: !0,
       ref: !0,
       __self: !0,
@@ -467,7 +466,7 @@ function jr() {
         return vr(e, b, A, v, c, ne.current, m);
       }
     }
-    var Ee = j.ReactCurrentOwner, Ve = j.ReactDebugCurrentFrame;
+    var Ee = P.ReactCurrentOwner, Ve = P.ReactDebugCurrentFrame;
     function q(e) {
       if (e) {
         var t = e._owner, o = ge(e.type, e._source, t ? t.type : null);
@@ -504,7 +503,7 @@ Check your code at ` + t + ":" + o + ".";
       }
     }
     var We = {};
-    function wr(e) {
+    function xr(e) {
       {
         var t = $e();
         if (!t) {
@@ -521,7 +520,7 @@ Check the top-level render call using <` + o + ">.");
         if (!e._store || e._store.validated || e.key != null)
           return;
         e._store.validated = !0;
-        var o = wr(t);
+        var o = xr(t);
         if (We[o])
           return;
         We[o] = !0;
@@ -541,14 +540,14 @@ Check the top-level render call using <` + o + ">.");
         else if (Se(e))
           e._store && (e._store.validated = !0);
         else if (e) {
-          var v = P(e);
+          var v = j(e);
           if (typeof v == "function" && v !== e.entries)
             for (var y = v.call(e), m; !(m = y.next()).done; )
               Se(m.value) && Ne(m.value, t);
         }
       }
     }
-    function xr(e) {
+    function wr(e) {
       {
         var t = e.type;
         if (t == null || typeof t == "string")
@@ -558,7 +557,7 @@ Check the top-level render call using <` + o + ">.");
           o = t.propTypes;
         else if (typeof t == "object" && (t.$$typeof === p || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        t.$$typeof === x))
+        t.$$typeof === w))
           o = t.propTypes;
         else
           return;
@@ -612,7 +611,7 @@ Check the top-level render call using <` + o + ">.");
             else
               De(z, e);
         }
-        return e === a ? Cr(S) : xr(S), S;
+        return e === a ? Cr(S) : wr(S), S;
       }
     }
     function Rr(e, t, o) {
@@ -625,7 +624,7 @@ Check the top-level render call using <` + o + ">.");
     ie.Fragment = a, ie.jsx = _r, ie.jsxs = Sr;
   }()), ie;
 }
-process.env.NODE_ENV === "production" ? ke.exports = Pr() : ke.exports = jr();
+process.env.NODE_ENV === "production" ? ke.exports = jr() : ke.exports = Pr();
 var k = ke.exports;
 const Ar = {
   small: "w-4 h-4 border-2",
@@ -634,20 +633,20 @@ const Ar = {
 }, Or = {
   default: "border-cui-astral-primary/30 border-t-cui-astral-primary",
   invert: "border-[#c4c4c2]/30 border-t-white"
-}, xt = ({
+}, wt = ({
   size: r = "medium",
   appearance: n = "default"
 }) => {
   const a = `rounded-full animate-spin ${Ar[r]} ${Or[n]}`;
   return /* @__PURE__ */ k.jsx("div", { className: a });
-}, Pe = "-";
+}, je = "-";
 function Mr(r) {
   const n = zr(r), {
     conflictingClassGroups: i,
     conflictingClassGroupModifiers: a
   } = r;
   function u(s) {
-    const d = s.split(Pe);
+    const d = s.split(je);
     return d[0] === "" && d.length !== 1 && d.shift(), Je(d, n) || Ir(s);
   }
   function l(s, d) {
@@ -668,7 +667,7 @@ function Je(r, n) {
     return u;
   if (n.validators.length === 0)
     return;
-  const l = r.join(Pe);
+  const l = r.join(je);
   return (s = n.validators.find(({
     validator: d
   }) => d(l))) == null ? void 0 : s.classGroupId;
@@ -718,7 +717,7 @@ function Te(r, n, i, a) {
 }
 function He(r, n) {
   let i = r;
-  return n.split(Pe).forEach((a) => {
+  return n.split(je).forEach((a) => {
     i.nextPart.has(a) || i.nextPart.set(a, {
       nextPart: /* @__PURE__ */ new Map(),
       validators: []
@@ -764,22 +763,22 @@ function $r(r) {
   const n = r.separator, i = n.length === 1, a = n[0], u = n.length;
   return function(s) {
     const d = [];
-    let p = 0, w = 0, g;
+    let p = 0, x = 0, g;
     for (let _ = 0; _ < s.length; _++) {
-      let P = s[_];
+      let j = s[_];
       if (p === 0) {
-        if (P === a && (i || s.slice(_, _ + u) === n)) {
-          d.push(s.slice(w, _)), w = _ + u;
+        if (j === a && (i || s.slice(_, _ + u) === n)) {
+          d.push(s.slice(x, _)), x = _ + u;
           continue;
         }
-        if (P === "/") {
+        if (j === "/") {
           g = _;
           continue;
         }
       }
-      P === "[" ? p++ : P === "]" && p--;
+      j === "[" ? p++ : j === "]" && p--;
     }
-    const x = d.length === 0 ? s : s.substring(w), T = x.startsWith(Ke), O = T ? x.substring(1) : x, F = g && g > w ? g - w : void 0;
+    const w = d.length === 0 ? s : s.substring(x), T = w.startsWith(Ke), O = T ? w.substring(1) : w, F = g && g > x ? g - x : void 0;
     return {
       modifiers: d,
       hasImportantModifier: T,
@@ -815,17 +814,17 @@ function Gr(r, n) {
     const {
       modifiers: d,
       hasImportantModifier: p,
-      baseClassName: w,
+      baseClassName: x,
       maybePostfixModifierPosition: g
     } = i(s);
-    let x = a(g ? w.substring(0, g) : w), T = !!g;
-    if (!x) {
+    let w = a(g ? x.substring(0, g) : x), T = !!g;
+    if (!w) {
       if (!g)
         return {
           isTailwindClass: !1,
           originalClassName: s
         };
-      if (x = a(w), !x)
+      if (w = a(x), !w)
         return {
           isTailwindClass: !1,
           originalClassName: s
@@ -836,7 +835,7 @@ function Gr(r, n) {
     return {
       isTailwindClass: !0,
       modifierId: p ? O + Ke : O,
-      classGroupId: x,
+      classGroupId: w,
       originalClassName: s,
       hasPostfixModifier: T
     };
@@ -846,9 +845,9 @@ function Gr(r, n) {
     const {
       modifierId: d,
       classGroupId: p,
-      hasPostfixModifier: w
+      hasPostfixModifier: x
     } = s, g = d + p;
-    return l.has(g) ? !1 : (l.add(g), u(p, w).forEach((x) => l.add(d + x)), !0);
+    return l.has(g) ? !1 : (l.add(g), u(p, x).forEach((w) => l.add(d + w)), !0);
   }).reverse().map((s) => s.originalClassName).join(" ");
 }
 function Yr() {
@@ -868,13 +867,13 @@ function Xe(r) {
 function Ur(r, ...n) {
   let i, a, u, l = s;
   function s(p) {
-    const w = n.reduce((g, x) => x(g), r());
-    return i = Nr(w), a = i.cache.get, u = i.cache.set, l = d, d(p);
+    const x = n.reduce((g, w) => w(g), r());
+    return i = Nr(x), a = i.cache.get, u = i.cache.set, l = d, d(p);
   }
   function d(p) {
-    const w = a(p);
-    if (w)
-      return w;
+    const x = a(p);
+    if (x)
+      return x;
     const g = Gr(p, i);
     return u(p, g), g;
   }
@@ -945,7 +944,7 @@ function st(r) {
   return Kr.test(r);
 }
 function lt() {
-  const r = R("colors"), n = R("spacing"), i = R("blur"), a = R("brightness"), u = R("borderColor"), l = R("borderRadius"), s = R("borderSpacing"), d = R("borderWidth"), p = R("contrast"), w = R("grayscale"), g = R("hueRotate"), x = R("invert"), T = R("gap"), O = R("gradientColorStops"), F = R("gradientColorStopPositions"), _ = R("inset"), P = R("margin"), j = R("opacity"), C = R("padding"), le = R("saturate"), X = R("scale"), ce = R("sepia"), ue = R("skew"), de = R("space"), fe = R("translate"), Z = () => ["auto", "contain", "none"], Q = () => ["auto", "hidden", "clip", "visible", "scroll"], ee = () => ["auto", f, n], h = () => [f, n], M = () => ["", L, D], I = () => ["auto", B, f], $ = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"], Y = () => ["solid", "dashed", "dotted", "double", "none"], re = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity", "plus-lighter"], H = () => ["start", "end", "center", "between", "around", "evenly", "stretch"], W = () => ["", "0", f], te = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"], N = () => [B, he], U = () => [B, f];
+  const r = R("colors"), n = R("spacing"), i = R("blur"), a = R("brightness"), u = R("borderColor"), l = R("borderRadius"), s = R("borderSpacing"), d = R("borderWidth"), p = R("contrast"), x = R("grayscale"), g = R("hueRotate"), w = R("invert"), T = R("gap"), O = R("gradientColorStops"), F = R("gradientColorStopPositions"), _ = R("inset"), j = R("margin"), P = R("opacity"), C = R("padding"), le = R("saturate"), X = R("scale"), ce = R("sepia"), ue = R("skew"), de = R("space"), fe = R("translate"), Z = () => ["auto", "contain", "none"], Q = () => ["auto", "hidden", "clip", "visible", "scroll"], ee = () => ["auto", f, n], h = () => [f, n], M = () => ["", L, D], I = () => ["auto", B, f], $ = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"], Y = () => ["solid", "dashed", "dotted", "double", "none"], re = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity", "plus-lighter"], H = () => ["start", "end", "center", "between", "around", "evenly", "stretch"], W = () => ["", "0", f], te = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"], N = () => [B, he], U = () => [B, f];
   return {
     cacheSize: 500,
     separator: ":",
@@ -1476,63 +1475,63 @@ function lt() {
        * @see https://tailwindcss.com/docs/margin
        */
       m: [{
-        m: [P]
+        m: [j]
       }],
       /**
        * Margin X
        * @see https://tailwindcss.com/docs/margin
        */
       mx: [{
-        mx: [P]
+        mx: [j]
       }],
       /**
        * Margin Y
        * @see https://tailwindcss.com/docs/margin
        */
       my: [{
-        my: [P]
+        my: [j]
       }],
       /**
        * Margin Start
        * @see https://tailwindcss.com/docs/margin
        */
       ms: [{
-        ms: [P]
+        ms: [j]
       }],
       /**
        * Margin End
        * @see https://tailwindcss.com/docs/margin
        */
       me: [{
-        me: [P]
+        me: [j]
       }],
       /**
        * Margin Top
        * @see https://tailwindcss.com/docs/margin
        */
       mt: [{
-        mt: [P]
+        mt: [j]
       }],
       /**
        * Margin Right
        * @see https://tailwindcss.com/docs/margin
        */
       mr: [{
-        mr: [P]
+        mr: [j]
       }],
       /**
        * Margin Bottom
        * @see https://tailwindcss.com/docs/margin
        */
       mb: [{
-        mb: [P]
+        mb: [j]
       }],
       /**
        * Margin Left
        * @see https://tailwindcss.com/docs/margin
        */
       ml: [{
-        ml: [P]
+        ml: [j]
       }],
       /**
        * Space Between X
@@ -1720,7 +1719,7 @@ function lt() {
        * @see https://tailwindcss.com/docs/placeholder-opacity
        */
       "placeholder-opacity": [{
-        "placeholder-opacity": [j]
+        "placeholder-opacity": [P]
       }],
       /**
        * Text Alignment
@@ -1741,7 +1740,7 @@ function lt() {
        * @see https://tailwindcss.com/docs/text-opacity
        */
       "text-opacity": [{
-        "text-opacity": [j]
+        "text-opacity": [P]
       }],
       /**
        * Text Decoration
@@ -1849,7 +1848,7 @@ function lt() {
        * @see https://tailwindcss.com/docs/background-opacity
        */
       "bg-opacity": [{
-        "bg-opacity": [j]
+        "bg-opacity": [P]
       }],
       /**
        * Background Origin
@@ -2113,7 +2112,7 @@ function lt() {
        * @see https://tailwindcss.com/docs/border-opacity
        */
       "border-opacity": [{
-        "border-opacity": [j]
+        "border-opacity": [P]
       }],
       /**
        * Border Style
@@ -2151,7 +2150,7 @@ function lt() {
        * @see https://tailwindcss.com/docs/divide-opacity
        */
       "divide-opacity": [{
-        "divide-opacity": [j]
+        "divide-opacity": [P]
       }],
       /**
        * Divide Style
@@ -2268,7 +2267,7 @@ function lt() {
        * @see https://tailwindcss.com/docs/ring-opacity
        */
       "ring-opacity": [{
-        "ring-opacity": [j]
+        "ring-opacity": [P]
       }],
       /**
        * Ring Offset Width
@@ -2304,7 +2303,7 @@ function lt() {
        * @see https://tailwindcss.com/docs/opacity
        */
       opacity: [{
-        opacity: [j]
+        opacity: [P]
       }],
       /**
        * Mix Blend Mode
@@ -2362,7 +2361,7 @@ function lt() {
        * @see https://tailwindcss.com/docs/grayscale
        */
       grayscale: [{
-        grayscale: [w]
+        grayscale: [x]
       }],
       /**
        * Hue Rotate
@@ -2376,7 +2375,7 @@ function lt() {
        * @see https://tailwindcss.com/docs/invert
        */
       invert: [{
-        invert: [x]
+        invert: [w]
       }],
       /**
        * Saturate
@@ -2426,7 +2425,7 @@ function lt() {
        * @see https://tailwindcss.com/docs/backdrop-grayscale
        */
       "backdrop-grayscale": [{
-        "backdrop-grayscale": [w]
+        "backdrop-grayscale": [x]
       }],
       /**
        * Backdrop Hue Rotate
@@ -2440,14 +2439,14 @@ function lt() {
        * @see https://tailwindcss.com/docs/backdrop-invert
        */
       "backdrop-invert": [{
-        "backdrop-invert": [x]
+        "backdrop-invert": [w]
       }],
       /**
        * Backdrop Opacity
        * @see https://tailwindcss.com/docs/backdrop-opacity
        */
       "backdrop-opacity": [{
-        "backdrop-opacity": [j]
+        "backdrop-opacity": [P]
       }],
       /**
        * Backdrop Saturate
@@ -3081,8 +3080,50 @@ const mt = rr, vt = ({ name: r }) => {
   }
 );
 yt.displayName = "Alert";
+const Ct = {
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        "cui-text": {
+          primary: "#1b1b1a",
+          secondary: "#545452",
+          tertiary: "#72716f",
+          subdued: "#a6a5a2"
+        },
+        "cui-astral": {
+          primary: "#2e7899",
+          secondary: "#2a638f",
+          tertiary: "#074058",
+          quaternary: "#5d72c2"
+        },
+        "cui-success": {
+          100: "#ebf5f1",
+          200: "#b6d1c6",
+          300: "#208560"
+        },
+        "cui-info": {
+          100: "#e8efff",
+          200: "#b9c7eb",
+          300: "#3950ad"
+        },
+        "cui-error": {
+          100: "#fff0f1",
+          200: "#facfd4",
+          300: "#cf182e"
+        },
+        "cui-warning": {
+          100: "#fff8e3",
+          200: "#ffe299",
+          300: "#ad7410"
+        }
+      }
+    }
+  },
+  plugins: []
+};
 export {
   yt as Alert,
-  xt as Spinner,
-  Et as tailwindConfig
+  wt as Spinner,
+  Ct as tailwindConfig
 };
