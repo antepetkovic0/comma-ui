@@ -14,6 +14,12 @@ export default defineConfig({
     rollupOptions: {
       external: ['react', 'react-dom'],
       output: {
+        assetFileNames(chunkInfo) {
+          if (chunkInfo.name === 'style.css') {
+            return 'comma-ui-styles.css';
+          }
+          return chunkInfo.name;
+        },
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
