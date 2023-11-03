@@ -3070,7 +3070,7 @@ const mt = rr, vt = ({ name: r }) => {
   success: "bg-cui-success-100 border-cui-success-200",
   info: "bg-cui-info-100 border-cui-info-200",
   error: "bg-cui-error-100 border-cui-error-200",
-  warning: "bg-orange-100 border-orange-200"
+  warning: "bg-[#FFA500] border-orange-200"
 }, yt = Tr(
   ({ type: r, children: n, className: i, ...a }, u) => {
     const s = ct("alert flex items-start gap-2 p-4 border rounded-sm text-cui-text-primary", ht[r], i);
