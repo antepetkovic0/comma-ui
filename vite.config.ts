@@ -3,23 +3,22 @@ import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import path from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'CommaUI',
-      fileName: 'comma-ui',
+      entry: {
+        'comma-ui': path.resolve(__dirname, 'src/lib/index.ts'),
+        'comma-ui-tailwind-preset': path.resolve(
+          __dirname,
+          'src/preset/index.ts'
+        ),
+      },
+      formats: ['es', 'cjs'],
+      fileName: '[name]',
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
       output: {
-        assetFileNames(chunkInfo) {
-          if (chunkInfo.name === 'style.css') {
-            return 'comma-ui-styles.css';
-          }
-          return chunkInfo.name;
-        },
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',

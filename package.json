@@ -9,16 +9,19 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/comma-ui.umd.cjs",
   "module": "./dist/comma-ui.js",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/comma-ui.cjs",
   "exports": {
     ".": {
       "import": "./dist/comma-ui.js",
-      "require": "./dist/comma-ui.umd.cjs"
+      "require": "./dist/comma-ui.cjs"
     },
-    "./comma-ui-styles.css": "./dist/comma-ui-styles.css"
+    "./preset": {
+      "import": "./dist/comma-ui-tailwind-preset.js",
+      "require": "./dist/comma-ui-tailwind-preset.cjs"
+    }
   },
-  "types": "./dist/index.d.ts",
   "scripts": {
     "start": "storybook dev -p 6006",
     "dev": "vite",
